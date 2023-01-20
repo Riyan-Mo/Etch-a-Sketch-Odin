@@ -17,8 +17,18 @@
     <div id="grid">
     </div><br>
     <div class="buttons-div">
-      <button>Adjust</button>
-      <button>Color</button>
+      <div class="adjust">
+        <form>
+          <label for="sizeRange">Set Canvas size:</label><br>
+          <label>2</label>
+          <input type="range" id="get" value="0" min="2" max="64" step="1" onclick="fetch()">
+          <label>64</label><br>
+          <label id="put"></label>
+        </form>
+      </div>
+      <button id="eraseBtn">Erase</button>
+      <button id="resetBtn">Reset</button>
+      <button id="rainbowBtn">Rainbow</button>
     </div>
   </div>
 

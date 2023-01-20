@@ -14,22 +14,66 @@
 #grid {
   flex: 1;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
   border-width: 2px;
-  max-width: 95%;
-  min-width: 400px;
-  min-height: 400px;
+  min-width: 450px;
+  min-height: 450px;
   border-color: rgb(10, 10, 10);
   border-style: solid;
 }
 
 #grid>div {
+  background-color: white;
   border-width: 1px;
-  border-color: rgb(179, 177, 177);
+  border-color: rgb(133, 133, 133);
   border-style: solid;
 }
 
 #grid>div:hover {
-  background-color: gray;
+  background-color: grey;
+}
+
+.buttons-div>button {
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  font-family: monospace;
+  color: white;
+  border-style: none;
+  font-weight: 900;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+#resetBtn {
+  background-color: red;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#eraseBtn {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.adjust {
+  display: flex;
+  text-align: center;
+}
+
+.buttons-div>button:active {
+  transform: translate(0px, 2px);
+}
+
+.buttons-div>button:hover {
+  opacity: 0.8;
+}
+
+#rainbowBtn {
+  background-color: indigo;
+  border: 1px solid indigo;
 }
